@@ -9,7 +9,8 @@ public class class_38_LaunchBrowser {
 		driver.get("https://www.google.co.in");// get method can help you to take you to any particular Websites
 		String title = driver.getTitle();// getTitle method can help to get the title of the page
 		System.out.println(title);
-		driver.quit();
-		//driver.close();
+		//driver.close();// will close the parent browser or that browser that has the control
+		driver.quit();// will close all the parent and child browser
+
 	}
 }
