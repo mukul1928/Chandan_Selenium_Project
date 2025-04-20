@@ -12,3 +12,4 @@ public class Amazon_PartialLinkText {
 		driver.findElement(By.partialLinkText("Service")).click();
 	}
 }
+ 
