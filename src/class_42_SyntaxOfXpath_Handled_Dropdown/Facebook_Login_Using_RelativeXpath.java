@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Facebook_Login_Using_RelativeXpath {
 	public static void main(String[] args) {
-		
+
 		ChromeDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.facebook.com");
@@ -14,8 +14,10 @@ public class Facebook_Login_Using_RelativeXpath {
 		email.sendKeys("chandanpandey1928@gmail.com");
 		WebElement password = driver.findElement(By.xpath("(//input[@id='pass'])"));
 		password.sendKeys("mukul1928@");
-		WebElement LogIn = driver.findElement(By.xpath("(//div[@class='_6ltg'])[1]"));
-		LogIn.click();
+		//WebElement LogIn = driver.findElement(By.xpath("(//div[@class='_6ltg'])[1]"));
+		//LogIn.click();
+		WebElement createnew = driver.findElement(By.xpath("(//a)[3]"));
+		createnew.click();
 	}
 
 }
