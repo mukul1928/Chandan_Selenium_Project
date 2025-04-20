@@ -12,7 +12,7 @@ public class Growtechminds_Registration {
 		driver.findElement(By.name("your-name")).sendKeys("Chandan Pandey");
 		driver.findElement(By.name("your-email")).sendKeys("chandanpandey@gmail.com");
 		driver.findElement(By.name("telephone")).sendKeys("8808080808");
-		//driver.findElement(By.name("fax")).sendKeys("43434352332");
+		// driver.findElement(By.name("fax")).sendKeys("43434352332");
 
 	}
 
