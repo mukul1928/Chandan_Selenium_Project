@@ -8,8 +8,6 @@ public class GroTechMindsHTML_JS_PopUpHandle {
 		driver.manage().window().maximize();
 		driver.navigate().to("file:///E:/AT_39_Batch/learningHTML1.html");
 		driver.switchTo().alert().accept();
-		//driver.switchTo().alert().dismiss();
+		// driver.switchTo().alert().dismiss();
 	}
-	
-
 }
