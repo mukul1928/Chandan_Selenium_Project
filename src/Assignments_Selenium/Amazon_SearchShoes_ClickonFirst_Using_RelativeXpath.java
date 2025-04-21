@@ -14,7 +14,9 @@ public class Amazon_SearchShoes_ClickonFirst_Using_RelativeXpath {
 		WebElement search_tf = driver.findElement(By.xpath("(//input[@id='twotabsearchtextbox'])"));
 		search_tf.sendKeys("shoes");
 		Thread.sleep(3000);
-		WebElement clickonfirst = driver.findElement(By.xpath("(//div[@class='s-suggestion s-suggestion-ellipsis-direction'])[1]"));
+		WebElement clickbutton = driver.findElement(By.xpath("(//input[@id='nav-search-submit-button'])"));
+		clickbutton.click();
+		WebElement clickonfirst = driver.findElement(By.xpath("(//div[@class='a-section aok-relative s-image-tall-aspect'])[1]"));
 		clickonfirst.click();
 
 	}
