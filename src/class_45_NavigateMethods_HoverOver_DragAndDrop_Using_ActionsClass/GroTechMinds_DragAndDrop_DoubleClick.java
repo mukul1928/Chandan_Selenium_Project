@@ -15,7 +15,7 @@ public class GroTechMinds_DragAndDrop_DoubleClick {
 		WebElement destination = driver.findElement(By.id("div2"));
 		Actions a1 = new Actions(driver);
 		a1.dragAndDrop(source, destination).perform();
-		a1.doubleClick(destination);
+		a1.doubleClick(destination).perform();
 	}
 
 }
