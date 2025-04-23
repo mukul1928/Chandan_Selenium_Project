@@ -1,4 +1,4 @@
-package class_46_RightClick_UsingActionsClass_TagName_ClassName_CSS_Selectors;
+package class_46_RightClick_UsingActionsClass_CSS_Selector_Using_TagName_ClassName_CSS_Selectors;
 
 import java.awt.AWTException;
 import java.awt.Robot;
