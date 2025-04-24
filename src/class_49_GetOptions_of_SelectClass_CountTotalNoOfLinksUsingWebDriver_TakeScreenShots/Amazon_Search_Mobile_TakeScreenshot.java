@@ -1,0 +1,32 @@
+package class_49_GetOptions_of_SelectClass_CountTotalNoOfLinksUsingWebDriver_TakeScreenShots;
+
+import java.io.File;
+import java.io.IOException;
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.io.FileHandler;
+
+public class Amazon_Search_Mobile_TakeScreenshot {
+	public static void main(String[] args) throws IOException {
+		ChromeDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.navigate().to("https://www.amazon.in");
+		WebElement search = driver.findElement(By.id("twotabsearchtextbox"));
+		search.sendKeys("I phone 16 pro max");
+		search.sendKeys(Keys.ENTER);
+		
+		TakesScreenshot tss = driver;
+		File source = tss.getScreenshotAs(OutputType.FILE);
+		File destination = new File("C:\\Users\\mukul\\eclipse-workspace\\Chandan_Selenium_Project\\Screenshots\\One.jpeg");
+		FileHandler.copy(source, destination);
+
+	}
+
+}
