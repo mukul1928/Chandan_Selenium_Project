@@ -22,6 +22,7 @@ public class Amazon_Search_GetWindowHandle {
 		search.sendKeys(Keys.ENTER);
 		WebElement click_first = driver.findElement(By.xpath("(//div[@class='a-section aok-relative s-image-fixed-height'])[1]"));
 		click_first.click();
+		//=======================Get Window Handles
 		Set<String> g1 = driver.getWindowHandles();
 		System.out.println(g1);
 		Thread.sleep(2000);
