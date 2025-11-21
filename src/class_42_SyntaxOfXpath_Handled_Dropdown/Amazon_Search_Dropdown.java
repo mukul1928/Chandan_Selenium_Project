@@ -16,8 +16,6 @@ public class Amazon_Search_Dropdown {
 		//s1.selectByIndex(10);
 		//s1.selectByVisibleText("Garden & Outdoors");
 		s1.selectByValue("search-alias=digital-music");
-		
-
 	}
 
 }
